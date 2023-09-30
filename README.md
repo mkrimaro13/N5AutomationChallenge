@@ -2,7 +2,7 @@
 
 ## Bienvenida.
 
-Hola :D, gracias por darme la oportunidad de demostrar mis habilidades con los retos, en este repositorio se encuentra la solución al reto de automatización.
+Hola, gracias por darme la oportunidad de demostrar mis habilidades con los retos, en este repositorio se encuentra la solución al reto de automatización.
 
 ## Desarrollo del desafío.
 
