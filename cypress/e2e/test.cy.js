@@ -5,6 +5,7 @@ describe('Automation Challenge', () => {
         return false;
       });
     it('Navegar a la Home Page de Netflix', () => {
+        cy.clearCookies()
         cy.visit("/")
     })
     it('Realizar el inicio de sesión', () => {
@@ -13,7 +14,13 @@ describe('Automation Challenge', () => {
         cy.contains('Password').type("a11b12c13d19")
         cy.get('.btn').click()
     })
-    it('Seleccionar el perfil para la búsqueda', () => {
+    it('Seleccionar el perfil de usuario', () => {
         cy.get(':nth-child(1) > :nth-child(1) > .profile-link > .avatar-wrapper > .profile-icon').click()
+    })
+    it('Obtener y comparar el título de la página', () => {
+        cy.title().should('include', 'Netflix')  
+    })
+    it('Obtener e imprimir el enlace del sitio', () => {
+        cy.url().should('include', 'www.netflix.com')
     })
 })

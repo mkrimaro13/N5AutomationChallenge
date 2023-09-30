@@ -21,6 +21,8 @@ Sobre el punto número uno de iniciar la clase `properties`, se omite, ya que es
 
 Respecto al punto dos, igualmente, la librería **Cypress** permite iniciar el driver por medio de una interfaz de usuario, por lo tanto no es necesario instanciar el *driver*, como si se haría con Selenium - Java.
 
+Relacionado con el punto 4, también se omite, ya que **Cypress** inicia una instancia maximizada del navegador, y dentro del archivo `cypress.config.js` se tiene una propiedad que fija la visualización en `1920x1080`
+
 ## Información importante
 
 Para ejecutar este proyecto es necesario contar una versión igual o mayor de `NodeJs 18.18.0 LTS`.
